@@ -1,0 +1,53 @@
+<html>
+<head>
+	<title>Login Page</title>
+	<link rel="stylesheet" type="text/css"  href="style.css" >
+	</head>
+<body>
+<main>
+<img class="Image" src="images/logo.png" alt="Logo">
+</main>
+	<h1></h1>
+	<form action="index.html">
+		<div>
+			<label for="email">Enter your email:</label>
+			<input type="email" id="emaillog" class="f1">
+		</div>
+		<div class="pwd">
+			<label for="pw">Enter your password:</label>
+			<input type="password" name="pw" class="f1"><br>
+			
+			<button type="submit" onclick="checklog()">Login</button>
+			<label>
+			<input type="checkbox" checked="checked name="remember"> Remember me </label><br>
+			<span class="psw">Forgot <a href="#">password?</a></span>
+		</div>
+		<div class="container" style="background-color:#f1f1f1">
+		<button type="button" class="cancelbtn">Cancel</button>
+		</div>
+		<div>
+		<a href="register.html">You dont't have account? Sign in</a>
+		</div>
+	</form>
+	
+	<script>
+		function checklog()
+		{
+			var x = document.getElementById("emaillog").value;
+			var y = document.getElementById("pw").value;
+				if(x == "er.gaganjit.kaur@gmail.com" && y == "1234")
+				{
+					window.location.href = 'index.html';
+				}
+				else
+				{
+					alert("Invalid Credentials");
+				}
+		}
+	</script>
+	
+	
+	
+	<
+</body>
+</html>

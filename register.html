@@ -1,0 +1,67 @@
+<html>
+<head>
+	<title>Registration Form</title>
+	<link rel="stylesheet" type="text/css"  href="mystyle.css" />
+<body>
+<main>
+<img class="Image" src="images/logo.png" alt="Logo" height="300" width="700">
+</main>
+<div>
+	<h1>CREATE ACCOUNT</h1>
+	</div>
+	<form action="index.html">
+		<div>
+			<label for="fname">Firstname:</label>
+			<input type="text" name="fname" class="rgs" required>
+		</div>
+		<div>
+			<label for="lname">Lastname:</label>
+			<input type="text" name="lname" class="rgs" required>
+		</div>
+		<div class="em">
+			<label for="email">Email:</label>
+			<input type="email" name="email" class="rgs" required>
+		</div>
+		<div>
+			<label for="tel">Telephone:</label>
+			<input type="tel" name="tel" class="rgs" required>
+		</div>
+		<div class="db">
+			<label for="dob">Date of birth:</label>
+			<input type="date" name="dob" class="rgs" required>
+		</div>
+		<div class="psw">
+			<label for="password">Create new password:</label>
+			<input type="password" name="password" class="rgs" required>
+			</div>
+		<div class="gdr" >
+			<label for="gndr">Gender:</label>
+			<input type="radio" name="gndr" value="Female" required>Female
+			<input type="radio" name="gndr" value="Male" required>Male		
+		</div>
+		<div class="hbs">
+			<label for="hob" required>Security Question:</label>
+			<select name="hob">
+			<option>-------------------SELECT-------------------</option>
+				<option>What is your pet name?</option>
+				<option>What is your mother maiden's name?</option>
+				<option>What is your favourite color?</option>
+			</select>
+		</div>
+		<div class="ans">
+			<label for="answer">Answer:</label>
+			<input type="answer" name="answer" class="rgs" required>
+			</div>
+		
+		<div>
+			<label for="cmmnt" id="msg">Comments:</label>
+			<textarea rows="5" cols="30" name="cmmnt"></textarea>
+		</div>
+		<div class="btn">
+			<input type="submit" value="Submit" id="btns">
+			<input type="reset" value="Reset" id="btns">	
+		</div>
+		
+	</form>
+</body>
+</html>
